@@ -1,0 +1,5 @@
+Hello everyone, I give a solution to those who have problems with haste.
+There is such a line in the player.h file 
+int16 m_baseRatingValue[MAX_COMBAT_RATING];
+It accommodates up to 32767 values. We change it to int32. Now it will hold a value up to 2,147,483,647. Decision:
+int32 m_baseRatingValue[MAX_COMBAT_RATING];
